@@ -63,7 +63,7 @@ if(NOT OOMPH_USE_GKLIB_FROM)
   set(GKLIB_CMAKE_ARGS
     -DCMAKE_BUILD_TYPE=${CMAKE_BUILD_TYPE}
     -DNO_X86=${CONFIGURE_GKLIB_WITH_NO_X86}
-  )
+    -DCMAKE_INSTALL_LIBDIR=lib)
 
   oomph_get_external_project_helper(
     PROJECT_NAME gklib
